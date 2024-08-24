@@ -1,0 +1,176 @@
+.e2s-seccion-FormularioTrabajo {
+    padding: 40px;
+    background-color: #f9f9f9;
+    font-family: 'Arial', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.e2s-titulo-formulario {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.e2s-titulo-formulario .e2s-color1 {
+    color: #000;
+}
+
+.e2s-titulo-formulario .e2s-color2 {
+    color: #36b5cd;
+}
+
+.e2s-contenido-formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.e2s-formulario-columna,
+.e2s-competencias-columna {
+    flex: 1;
+    min-width: 300px;
+    margin: 10px;
+}
+
+#e2s-formularioTrabajo {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+#e2s-formularioTrabajo label {
+    font-weight: bold;
+    color: #333;
+}
+
+#e2s-formularioTrabajo textarea {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    resize: vertical; /* Permite redimensionar solo verticalmente */
+    min-height: 100px; /* Ajusta la altura mínima si es necesario */
+    overflow: auto; /* Muestra una barra de desplazamiento si el contenido supera el tamaño del área */
+}
+#e2s-formularioTrabajo input,
+#e2s-formularioTrabajo select {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+#e2s-formularioTrabajo input[type="file"] {
+    padding: 5px;
+}
+
+#e2s-formularioTrabajo input:focus,
+#e2s-formularioTrabajo textarea:focus,
+#e2s-formularioTrabajo select:focus {
+    border-color: #36b5cd;
+    outline: none;
+}
+
+.e2s-casilla-aceptacion {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.e2s-casilla-aceptacion a {
+    color: #36b5cd;
+    text-decoration: none;
+}
+
+.e2s-casilla-aceptacion label {
+    font-size: 0.9rem;
+}
+
+.e2s-btn-enviar {
+    background-color: #2d198c;
+    color: #fff;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    margin-top: 20px;
+}
+
+.e2s-btn-enviar:hover {
+    background-color: #36b5cd;
+    transform: scale(1.05);
+}
+
+.e2s-titulo-competencias {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.e2s-titulo-competencias .e2s-color1 {
+    color: #000;
+}
+
+.e2s-titulo-competencias .e2s-color2 {
+    color: #36b5cd;
+}
+
+.e2s-competencias-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 20px;
+    align-items: center;
+    text-align: center;
+}
+
+.e2s-competencia-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.e2s-competencia-item i {
+    font-size: 3rem;
+    color: #36b5cd;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.e2s-competencia-item p {
+    font-size: 1.1rem;
+    color: #333;
+    transition: color 0.3s;
+}
+
+.e2s-competencia-item:hover i {
+    transform: scale(1.2);
+    color: #36b5cd;
+}
+
+.e2s-competencia-item:hover p {
+    color: #36b5cd;
+}
+
+@media (max-width: 768px) {
+    .e2s-contenido-formulario {
+        flex-direction: column;
+    }
+
+    .e2s-competencias-grid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
